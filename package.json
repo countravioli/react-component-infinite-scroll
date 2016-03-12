@@ -1,6 +1,6 @@
 {
   "name": "react-component-infinite-scroll",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "React Component for Infinite Scrolling in a page",
   "main": "infinite.js",
   "scripts": {
@@ -15,7 +15,10 @@
     "infinite-scrolling",
     "scrolling"
   ],
-  "author": "Llorenç Muntaner <llorenc.muntaner@gmail.com>",
+  "authors": [
+    "Aitor Palacios <https://github.com/apalzab>",
+    "Llorenç Muntaner <llorenc.muntaner@gmail.com> <https://github.com/lmuntaner>"
+  ],
   "license": "MIT",
   "dependencies": {
     "lodash.throttle": "^4.0.1",
