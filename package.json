@@ -1,12 +1,12 @@
 {
   "name": "react-component-infinite-scroll",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "React Component for Infinite Scrolling in a page",
   "main": "infinite.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "babel-tape-runner test/",
     "build": "gulp build",
-    "prepublish": "npm run build"
+    "prepublish": "npm run test && npm run build"
   },
   "keywords": [
     "react",
