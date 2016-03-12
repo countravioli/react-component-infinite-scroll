@@ -1,5 +1,5 @@
 {
-  "name": "react-component-infinite-scrolling",
+  "name": "react-component-infinite-scroll",
   "version": "0.1.0",
   "description": "React Component for Infinite Scrolling in a page",
   "main": "infinite.js",
@@ -33,9 +33,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/lmuntaner/react-component-infinite-scrolling.git"
+    "url": "https://github.com/lmuntaner/react-component-infinite-scroll.git"
   },
   "bugs": {
-    "url": "https://github.com/lmuntaner/react-component-infinite-scrolling/issues"
+    "url": "https://github.com/lmuntaner/react-component-infinite-scroll/issues"
   }
 }
