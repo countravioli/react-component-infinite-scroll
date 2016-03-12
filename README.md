@@ -23,7 +23,7 @@ class PageableList extends React.Component {
   };
 
   nextPage() {                  // whatever method you want InfiniteScroll to call
-    actions.fetchImages();
+    this.props.actions.fetchImages();
   }
 
   render() {
