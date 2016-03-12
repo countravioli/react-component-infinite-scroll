@@ -1,4 +1,4 @@
-# Infinite Scrolling React Component
+# Infinite Scroll React Component
 
 This is a simple React Component for a Infinite Scrolling Page.
 
@@ -12,6 +12,7 @@ Install react component:
 `npm install --save react-component-infinite-scroll`
 
 Import component in your file
+
 `import InfiniteScroll from 'react-component-infinite-scroll';`
 
 Use it in your component
@@ -40,4 +41,4 @@ class PageableList extends React.Component {
 
 `InfiniteScroll` component will call the method passed in the `nextPage` `prop` whenever it hits
 the `threshold` from the bottom of the page. Which means that if the method updates the state,
-it will reRender the Component.
+it will re-render the Component.
