@@ -6,7 +6,7 @@ import ReactDOM from 'react-dom';
 import { mount } from 'enzyme';
 import { createDom, EmptyComponent, createEvent, destroyDom } from './helpers';
 
-import InfiniteScroll from '../infinite';
+import InfiniteScroll from '../src/infinite';
 
 test('InfiniteScroll component', t => {
   const findDOMNode = sinon.stub(ReactDOM, 'findDOMNode');
