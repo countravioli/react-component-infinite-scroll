@@ -3,11 +3,6 @@ import ReactDOM from 'react-dom';
 import throttle from 'lodash.throttle';
 
 class InfiniteScroll extends Component {
-  static propTypes = {
-    children: React.PropTypes.node,
-    nextPage: React.PropTypes.func.isRequired,
-    threshold: React.PropTypes.number
-  };
   componentDidMount() {
     this.throttledScroll = throttle(this.onScroll.bind(this), 500);
     window.addEventListener('scroll', this.throttledScroll, false);
@@ -20,6 +15,7 @@ class InfiniteScroll extends Component {
   componentWillUnmount() {
     window.removeEventListener('scroll', this.throttledScroll, false);
     window.removeEventListener('resize', this.throttledScroll, false);
+    this.throttledScroll.cancel();
   }
   onScroll() {
     const windowBottom = window.scrollY + window.innerHeight;
@@ -35,5 +31,15 @@ class InfiniteScroll extends Component {
     return Children.only(children);
   }
 }
+
+InfiniteScroll.propTypes = {
+  children: React.PropTypes.node,
+  nextPage: React.PropTypes.func.isRequired,
+  threshold: React.PropTypes.number
+};
+
+InfiniteScroll.defaultProps = {
+  threshold : 600
+};
 
 export default InfiniteScroll;
